@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $jwt = getenv('JWT_TOKEN');
 $namespace = getenv('NAMESPACE');
 $topicName = $namespace . "/" . getenv('TOPIC_NAME');
@@ -22,5 +22,5 @@ $result = $producer->flush(10000);
 if (RD_KAFKA_RESP_ERR_NO_ERROR !== $result) {
     throw new \RuntimeException('Was unable to flush, messages might be lost!');
 }
-
+$_SESSION['message'] = "Message sent to Topic successfully View messages page to see them";
 header("location:index.php");

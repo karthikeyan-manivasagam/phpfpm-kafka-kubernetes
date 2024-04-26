@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: producer
-        image: karthikeyanmanivasagam/kafka-producer:1.2
+        image: karthikeyanmanivasagam/kafka-producer:1.6
         ports:
         - containerPort: 9000

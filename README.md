@@ -1,6 +1,6 @@
 # phpfpm-ngnix-kafka-kubernetes
 
-This repo have a demo code to produce and consume a message to kafka hosted in using phpkakfa library
+This repo have a demo code to produce and consume a message to kafka using phpkakfa library
 
 ## Steps to run in Local
 

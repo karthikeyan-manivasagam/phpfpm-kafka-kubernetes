@@ -1,5 +1,9 @@
 #!/bin/bash
 
+    cd k8s
+    kubectl apply -f ./
+    cd ..
+
 # Load the .env file
 export $(grep -v '^#' .env | xargs)
 
@@ -19,4 +23,6 @@ kubectl set env deployment/producer-deployment SECURITY_PROTOCOL=$SECURITY_PROTO
     NAMESPACE=$NAMESPACE \
     TOPIC_NAME=$TOPIC_NAME \
     CONSUMER_GROUP_ID=$CONSUMER_GROUP_ID
+
+minikube service nginx-service -n default    
 

@@ -4,16 +4,12 @@ This repo has the example code to run the php producer and consumer setup with k
 
 ## Steps to run in Local
 
-Before start executing the below commands please make sure you have minikube installed and renamed the .env.default to .env and make sure all values are updated as per streamnative cluster.
+Before start executing the below commands please make sure you have minikube,kubectl and set kubectl context to minikube and rename the env.default to .env and make sure all values are updated as per streamnative cluster.
     
     minikube start
-    cd k8s
-    kubectl apply -f ./
-    cd ../source setenv.sh
-    minikube service nginx-service -n default
 
-    Then navigate to http://host/index.php to send messages
-
+    source setenv.sh
+    
     Then Enter some value the form and submit
 
     Then navigate to http://host/consumer.php to see the messages

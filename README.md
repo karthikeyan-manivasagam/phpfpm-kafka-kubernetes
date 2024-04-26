@@ -9,10 +9,6 @@ Before start executing the below commands please make sure you have minikube,kub
     minikube start
 
     source setenv.sh
-    
-    Then Enter some value the form and submit
-
-    Then navigate to http://host/consumer.php to see the messages
      
 
 

@@ -1,6 +1,6 @@
 # phpfpm-ngnix-kafka-kubernetes
 
-This repo have a demo code to produce and consume a message to kafka using phpkakfa library
+This repo has the example code to run the php producer and consumer setup with kubernetes php fpm and ngnix using phprdkafka client, this cleint can also be used to connect to streamnative apache pulsar though Kafka protocol
 
 ## Steps to run in Local
 
